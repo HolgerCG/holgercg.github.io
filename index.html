@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día de las Madres</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fff8f0;
+            color: #444;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ffe3e3;
+            padding: 2rem;
+            text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .message {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .gallery {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            max-width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .video {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+            border-radius: 8px;
+        }
+        .quotes {
+            font-style: italic;
+            margin-top: 2rem;
+        }
+        .button-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .hug-button {
+            padding: 1rem 2rem;
+            background-color: #ffb6b9;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .hug-button:hover {
+            background-color: #ff9aa2;
+        }
+        .hug-animation {
+            display: none;
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 2rem;
+            animation: fadeIn 2s ease forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #fff0f5;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>💐 Feliz Día de las Madres 💐</h1>
+</header>
+
+<section>
+    <div class="message">
+        <p>
+            Mamá, en este día tan especial quiero recordarte lo mucho que te amo y lo agradecido/a que estoy por cada momento que has compartido conmigo. 
+            Gracias por tu ternura, tu sabiduría, tu paciencia y por enseñarme con el ejemplo. 
+            Tu abrazo siempre fue mi refugio, tu voz mi guía, y tu sonrisa mi mayor alegría.
+        </p>
+        <p>
+            Hoy celebro tu existencia, tu luz y tu fuerza. ¡Gracias por ser mi madre!
+        </p>
+    </div>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc4d3?auto=format&fit=crop&w=400&q=80" alt="Foto madre 1">
+        <img src="https://images.unsplash.com/photo-1503455637927-730bce8583c0?auto=format&fit=crop&w=400&q=80" alt="Foto madre 2">
+        <img src="https://images.unsplash.com/photo-1523413363574-c30aa1c2a516?auto=format&fit=crop&w=400&q=80" alt="Foto madre 3">
+    </div>
+
+    <div class="video">
+        <p>🌷 Esta canción me recuerda a ti:</p>
+        <iframe src="https://www.youtube.com/embed/nU7765hZ1yI" allowfullscreen></iframe>
+    </div>
+
+    <div class="quotes">
+        <p>“El corazón de una madre es un abismo profundo en cuyo fondo siempre encontrarás perdón.” — Honoré de Balzac</p>
+        <p>“Madre: la palabra más bella pronunciada por el ser humano.” — Kahlil Gibran</p>
+    </div>
+
+    <div class="button-container">
+        <button class="hug-button" onclick="showHug()">💌 Haz clic para recibir tu abrazo virtual</button>
+        <div class="hug-animation" id="hugMessage">🤗💖 Aquí va mi abrazo, con todo mi amor 💖🤗</div>
+    </div>
+</section>
+
+<footer>
+    Hecho con amor 🌹 — Feliz Día de las Madres
+</footer>
+
+<script>
+    function showHug() {
+        const hug = document.getElementById('hugMessage');
+        hug.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
